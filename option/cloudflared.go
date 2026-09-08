@@ -11,6 +11,6 @@ type CloudflaredInboundOptions struct {
 	DatagramVersion             string             `json:"datagram_version,omitempty" enum:"v2,v3"`
 	GracePeriod                 badoption.Duration `json:"grace_period,omitempty"`
 	Region                      string             `json:"region,omitempty"`
-	ControlDialer               DialerOptions      `json:"control_dialer,omitempty"`
-	TunnelDialer                DialerOptions      `json:"tunnel_dialer,omitempty"`
+	ControlDialer               DialerOptions      `json:"control_dialer,omitzero"`
+	TunnelDialer                DialerOptions      `json:"tunnel_dialer,omitzero"`
 }

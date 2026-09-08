@@ -44,7 +44,7 @@ type OpenConnectEndpointOptions struct {
 	TrojanInterval                 badoption.Duration                   `json:"trojan_interval,omitempty"`
 	QueueLength                    uint32                               `json:"queue_length,omitempty"`
 	AllowInsecureCrypto            bool                                 `json:"allow_insecure_crypto,omitempty"`
-	TLS                            OpenConnectTLSOptions                `json:"tls,omitempty"`
+	TLS                            OpenConnectTLSOptions                `json:"tls,omitzero"`
 	FormEntries                    []OpenConnectFormEntryOptions        `json:"form_entries,omitempty"`
 }
 

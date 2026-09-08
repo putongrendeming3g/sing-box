@@ -13,7 +13,7 @@ type ShadowTLSInboundOptions struct {
 	Version                int                                                  `json:"version,omitempty" enum:"1,2,3"`
 	Password               string                                               `json:"password,omitempty"`
 	Users                  []ShadowTLSUser                                      `json:"users,omitempty"`
-	Handshake              ShadowTLSHandshakeOptions                            `json:"handshake,omitempty"`
+	Handshake              ShadowTLSHandshakeOptions                            `json:"handshake,omitzero"`
 	HandshakeForServerName *badjson.TypedMap[string, ShadowTLSHandshakeOptions] `json:"handshake_for_server_name,omitempty"`
 	StrictMode             bool                                                 `json:"strict_mode,omitempty"`
 	WildcardSNI            WildcardSNI                                          `json:"wildcard_sni,omitempty"`
